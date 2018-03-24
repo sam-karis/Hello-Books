@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>user</title>
+
+    <!-- Setting to be responsive to mobile first-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Customized css-->
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/main.css" />
+
+</head>
+
+<body class="user">
+
+    <!-- Start of navbar-->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <p class="navbar-brand">Hello Books</p>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <!-- End of navbar-->
+
+    <h1>Borrow and Return a Book</h1>
+
+    <div class="container">
+        <!-- Start list of books -->
+        <table class="table text-primary">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Book</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th class="text-right">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img class="bookimg" src="static/Books/spells.jpg">
+                    </td>
+                    <td class="text-center">Book of spell</td>
+                    <td class="text-center">Description</td>
+                    <td class="text-right">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#borrowBookModal">Borrow</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#returnBookModal">Return</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="bookimg" src="static/Books/animal lympics.jpg">
+                    </td>
+                    <td class="text-center">Animals</td>
+                    <td class="text-center">Description</td>
+                    <td class="text-right">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#borrowBookModal">Borrow</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#returnBookModal">Return</button>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="bookimg" src="static/Books/design and creation.jpg">
+                    </td>
+                    <td class="text-center">Design</td>
+                    <td class="text-center">Description</td>
+                    <td class="text-right">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#borrowBookModal">Borrow</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#returnBookModal">Return</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="bookimg" src="static/Books/drama.jpg">
+                    </td>
+                    <td class="text-center">Drama</td>
+                    <td class="text-center">Description</td>
+                    <td class="text-right">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#borrowBookModal">Borrow</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#returnBookModal">Return</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="bookimg" src="static/Books/The world.jpg">
+                    </td>
+                    <td class="text-center">The world</td>
+                    <td class="text-center">Description</td>
+                    <td class="text-right">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#borrowBookModal">Borrow</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#returnBookModal">Return</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="bookimg" src="static/Books/html and css.jpg">
+                    </td>
+                    <td class="text-center">Html Css</td>
+                    <td class="text-center">Description</td>
+                    <td class="text-right">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#borrowBookModal">Borrow</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#returnBookModal">Return</button>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+        <!-- End list of books -->
+    </div>
+
+    <!-- Start Borrow Book Modal-->
+    <div class="container">
+        <div class="modal fade" id="borrowBookModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- Start modal body-->
+                    <div class="modal-body">
+                        <!--Start of borrow book form-->
+                        <form>
+
+                            <!--Form heading start-->
+                            <h1>
+                                <!--Modal Header -->
+                                <div class="modal-header">
+                                    <h3 class="modal-title">Borrow a book from the library</h3>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!--Modal Header -->
+                            </h1>
+                            <hr>
+                            <!-- Form heading End-->
+
+                            <!-- Book Image-->
+                            <div class="row">
+                                <img class="bookimg" src="static/Books/drama.jpg">
+                            </div>
+
+                            <!--Form body or fields-->
+                            <div>
+                                <label for="inputbooktitle">Book Title</label>
+                                <input type="text" class="form-control" id="inputbooktitle" value="Book Title" disabled>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="inputbookdescription">Book Description</label>
+                                <input type="text" class="form-control" id="inputbookdescription" value="Book Existing Description" disabled>
+                            </div>
+                            <br>
+
+                            <div>
+                                <label for="inputbookreturndate">Return Date</label>
+                                <input type="text" class="form-control" id="inputbookdescription" placeholder="dd-mm-yy">
+                            </div>
+                            <br>
+
+                            <!--Start of borrow button-->
+                            <button type="submit" class="btn btn-success btn-block">confirm Borrowing This Book</button>
+                            <!-- End of borrow button-->
+
+                        </form>
+                        <!-- End of edit book form-->
+                    </div>
+                    <!-- Start modal body-->
+
+                    <!--start Modal footer-->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Exit</button>
+                    </div>
+                    <!--End Modal footer-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Borrow Book Modal-->
+
+    <!-- Start Return Book Modal-->
+    <div class="container">
+        <div class="modal fade" id="returnBookModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- Start modal body-->
+                    <div class="modal-body">
+
+                        <!--Start of Return book form-->
+                        <form>
+
+                            <!--Form heading start-->
+                            <h1>
+                                <!--Modal Header -->
+                                <div class="modal-header">
+                                    <h3 class="modal-title">Return a book to the library</h3>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!--Modal Header -->
+                            </h1>
+                            <hr>
+                            <!-- Form heading End-->
+
+                            <!-- Book Image-->
+                            <div class="row">
+                                <img class="bookimg" src="static/Books/drama.jpg">
+                            </div>
+                            <!-- Book Image-->
+
+                            <!--Form body or fields-->
+                            <div>
+                                <label for="inputbooktitle">Book Title</label>
+                                <input type="text" class="form-control" id="inputbooktitle" value="Book Title" disabled>
+                            </div>
+                            <br>
+                            <div>
+                                <label for="inputbookdescription">Book Description</label>
+                                <input type="text" class="form-control" id="inputbookdescription" value="Book Description" disabled>
+                            </div>
+                            <br>
+
+                            <!--Start of delete button-->
+                            <button type="submit" class="btn btn-info btn-block">Confirm Return</button>
+                            <!-- End of delete button-->
+
+                        </form>
+                        <!-- End of delete book form-->
+                    </div>
+                    <!-- Start modal body-->
+
+                    <!--start Modal footer-->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Exit</button>
+                    </div>
+                    <!--End Modal footer-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Return Book Modal-->
+
+
+    <!--Start of footer-->
+    <footer>
+        <br>
+        <div class="text-center text-muted">
+            <small>
+                <p>Developed by Sammy Kariuki &copy; Copyright
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script> Term & Condition Apply</p>
+            </small>
+        </div>
+        <br>
+    </footer>
+    <!-- end footer-->
+
+</body>
+
+</html>

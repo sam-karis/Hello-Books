@@ -1,0 +1,60 @@
+body.signup, body.login, body.dashboard, body.books, body.history, body.user{
+    background-color: rgb(241, 189, 241);
+}
+
+body.index{
+    background-image: url("../images/bg-one.jpg");
+}
+
+.nav-icon{
+    height: 30px;
+    width: 30px;
+}
+
+h1, h4{
+    text-align: center;
+    color: rgb(139, 0, 69);
+}
+
+h2, h5{
+    text-align: center;
+    color: rgb(0, 139, 30);
+}
+
+footer{
+    position: -ms-page;
+    bottom: 0px;
+    width: 100%;
+}
+
+.loginFooter{
+    position: absolute;
+    width: 100%;
+
+}
+
+.carousel-inner{
+    height: 500px;
+    width: 100%;
+}
+.carousel-item{
+    height: 300px;
+    width: 100%;
+}
+img{
+    width: 100%;
+}
+.carousel-caption{
+    top: 0;
+    bottom: auto;
+}
+
+.bookimg{
+    height: 100px;
+    width: 100px;
+}
+
+.table td, .table th{
+    vertical-align: middle;
+    text-align: center;
+}

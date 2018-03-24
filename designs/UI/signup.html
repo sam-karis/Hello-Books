@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+
+    <!-- Setting to be responsive to mobile first-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <!-- Customized css-->
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/main.css" />
+
+</head>
+
+<body class="signup">
+
+    <!-- Start of Navbar-->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="navbar-brand">Hello Books</div>
+            <ul class="nav justify-content-center">
+                <li class="nav-item active">
+                    <a class="nav-link" href="books.html">Books</a>
+                </li>
+            </ul>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End of Navbar-->
+
+    <!--Signup Form grid-->
+    <div class="row justify-content-center">
+        <div class="col-4">
+
+            <!--Start of signup Form-->
+            <form action="login.html">
+
+                <!--Form heading start-->
+                <h1>
+                    <strong>Welcome to Hello Books</strong>
+                </h1>
+                <h2>Sign Up</h2>
+                <!-- Form heading End-->
+
+                <!--Choose type of user start-->
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01">User Category</label>
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Choose...</option>
+                        <option>Admin</option>
+                        <option>Student</option>
+                        <option>Guest</option>
+                    </select>
+                </div>
+                <!--Choose type of user End-->
+
+                <!--Form body or fields-->
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="inputfirstname">First Name</label>
+                        <input type="text" class="form-control" id="inputfirstname" placeholder="First Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputlaststname">Last Name</label>
+                        <input type="text" class="form-control" id="inputlastname" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="inputidnumber">ID Number</label>
+                        <input type="text" class="form-control" id="inputidnumber" placeholder="ID Number">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputtelnumber">Tel Number</label>
+                        <input type="tel" class="form-control" id="inputtelnumber" placeholder="Phone Number">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email :</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="example@andela.com">
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="exampleInputPassword1">Password :</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="exampleInputPassword2">Password :</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
+                    </div>
+                </div>
+                <!--Form body or fields-->
+
+                <!--Start of Signup button-->
+                <button type="submit" onclick="alert('Registration Succesfully Click Ok to Login')" class="btn btn-success btn-block">Sign Up</button>
+                <!-- End of signUp  form-->
+                <br>
+                <p>Already have an Account
+                    <a href="login.html">Login Here</a>
+                </p>
+            </form>
+            <!-- End of signup form-->
+
+        </div>
+    </div>
+    <!--End of Signup grid-->
+
+
+    <!--Start of footer-->
+    <footer class="signupFooter">
+        <br>
+        <div class="text-center text-muted">
+            <small>
+                <p>Developed by Sammy Kariuki &copy; Copyright
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script> Term & Condition Apply</p>
+            </small>
+        </div>
+        <br>
+    </footer>
+    <!-- end footer-->
+
+</body>
+
+</html>
